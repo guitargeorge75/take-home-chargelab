@@ -1,0 +1,20 @@
+{
+  "name": "take-home",
+  "version": "1.0.0",
+  "description": "Take Home for ChargeLab",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha src/test/test-files/ --reporter mochawesome"
+  },
+  "author": "Subhayu Mukherjee",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "4.2.0",
+    "mocha": "10.4.0",
+    "supertest": "7.0.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^7.1.3",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
