@@ -1,5 +1,7 @@
 # Take Home - ChargeLab
 
+[![ChargeLab Tests CI](https://github.com/guitargeorge75/take-home-chargelab/actions/workflows/node.js.yml/badge.svg)](https://github.com/guitargeorge75/take-home-chargelab/actions/workflows/node.js.yml)
+
 This take home includes tests written for the V1 Chargers endpoint. The tests use the following libraries
 
 - Nodejs
@@ -47,6 +49,11 @@ The tests should run and the results displayed on the terminal window.
 The mocha test results should be displayed on the terminal for the current execution after running the test command. For a more detailed execution
 report please refer to the mochawesome html report located at `mochawesome-report/mochawesome.html`
 
+### CI Implementation
+
+The tests are also being executed on every pull request to this repository in github using github actions. They can also be executed manually from the github action tab. To do so, please follow the instruction [here](https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow#running-a-workflow). Once a github actions run is completed, the artifacts for that run including the mochawesome html reports can be downloaded from the run history. Past executions are available [here](https://github.com/guitargeorge75/take-home-chargelab/actions).
+
+Note - To execute the tests in github actions, I might need to give access to the repository. Please reach out at subhayumukherji@gmail.com for access.
 ## Test Approach
 
 For this exercise I was provided with a GET endpoint for chargers on a UAT environment. The approach I adopted was the following:
