@@ -1,8 +1,17 @@
 'use strict'
 
+// Name of Chargers Used in Test Files
 const CSFFREEPLUGEV = 'csf-free-plugev';
 const CSFPAID= 'csf-paid'
 const CSFDOESNOTEXIST= 'csf-does-not-exist'
+
+/**
+     * This method is used to return an object of expectedValues provided a charger name.
+     * 
+     * @param chargerName - The name of the charger for which to retrieve the expected values
+     * 
+     * @returns - An Object which contains all the expected values to be asserted on.
+*/
 
 const ChargersV1 = (chargerName) => {
     switch (chargerName) {
